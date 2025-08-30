@@ -22,12 +22,14 @@ footer {
     background-color: #fff;
     font-size: 0.9em;
     width: 100vw;
+    margin-top: 40px;
 }
 
 .controles-superiores {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 10px;
 }
@@ -82,6 +84,7 @@ footer {
 
 #grade-container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     padding: 10px;
     max-width: 1800px;
@@ -111,6 +114,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
     font-size: 0.9em;
+    overflow-wrap: break-word;
 }
 
 .disciplina:hover {
